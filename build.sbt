@@ -16,4 +16,6 @@ mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
 	}
 }
 
+mainClass in (Compile, packageBin) := Some("com.streamer.IngestStream")
+
 test in assembly := {}
